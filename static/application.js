@@ -10,6 +10,7 @@ $(document).ready(function(){
       data: $form.serialize()
     })
     .done(function(response){
+      $('#results').remove();
       $('#input-div').append(response)
     })
   })
