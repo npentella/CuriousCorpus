@@ -46,8 +46,10 @@ $ source ~/.bashrc
   $ export APP_SETTINGS="config.DevelopmentConfig"
 ```
 
+
+
 ##Contributors
-Nicolas Pentella - @npentella
+* Nicolas Pentella - [@npentella](https://github.com/npentella)
 Rachael Lunney - @rakaloo
 Molly Fitzharris - @mfitzharris
 Laura Moreno - @lauframo
