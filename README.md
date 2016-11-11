@@ -29,11 +29,11 @@ gunicorn==19.6.0
 
 3. Start virtual environment
  ```{r, engine='bash'}
-   $ echo "source `which activate.sh`" >> ~/.bashrc
-   $ source ~/.bashrc
+$ echo "source `which activate.sh`" >> ~/.bashrc
+$ source ~/.bashrc
  ```
 
 4. Run app_settings variable
-```
+ ```{r, engine='bash'}
   $ export APP_SETTINGS="config.DevelopmentConfig"
 ```
