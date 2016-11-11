@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 from helpers import predict, svm_predict_all
-
+import os
 
 application = Flask(__name__)
+application.config.from_object(os.environ['APP_SETTINGS'])
 
 # svm_prediction = svm_predict_all()
 
