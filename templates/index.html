@@ -5,16 +5,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
     </script>
     <script src="/static/application.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/styles.css">
   </head>
   <body>
-      <h1>CuriousCorpus</h1>
-      <div id="input-div">
+    <div class="col-sm-10">
+      <div class="page-header">
+        <h1>CuriousCorpus</h1>
+      </div>
+      <div class="form-group" id="input-div">
         <form action="/texts" method="post" id="input-text">
-          <textarea name="inputText" id="input-text-field" cols="90" rows="20">Input a book to analyze here</textarea><br>
-          <input type="submit" name="submit">
+          <textarea class="form-control" name="inputText" id="input-text-field" cols="90" rows="20" placeholder="Input a book to analyze here"></textarea><br>
+          <input type="submit" name="submit" class="btn btn-default">
         </form>
       </div>
       <a href="/texts">Analytics for 2,000 books</a>
-      <button id="test-data"> Test 2,000 books for free! </button>
+    </div>
   </body>
 </html>
