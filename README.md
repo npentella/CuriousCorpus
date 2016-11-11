@@ -1,6 +1,13 @@
 # CuriousCorpus
 ## Purpose
-Develop a solution to estimate the period of origin of an inputted passage of text
+CuriousCorpus is an algorithmic solution to identify the period of origin of an inputted passage of text using Natural Language Processing and machine-learning.
+
+Leveraging the Guttenberg corpora and Scikit-learn libraries, we implemented three models: Naive Bayes, Support Vector Machine and Random Forest classifier. Through the training of our models, we were able to improve accuracy rates from as low as 38% to 81%.
+
+We provide a simple web app to quickly input text and view predictions from each model, however, the strength of this project lies in the backend processing rather than a user interface.
+
+
+
 
 ## Dependencies
 * click==6.6
@@ -16,6 +23,7 @@ Develop a solution to estimate the period of origin of an inputted passage of te
 * gunicorn==19.6.0
 
 ##Configuration Instructions
+
 1. Activate your environment
  ```{r, engine='bash'}
    $ source env/bin/activate
@@ -37,3 +45,9 @@ $ source ~/.bashrc
  ```{r, engine='bash'}
   $ export APP_SETTINGS="config.DevelopmentConfig"
 ```
+
+##Contributors
+Nicolas Pentella - @npentella
+Rachael Lunney - @rakaloo
+Molly Fitzharris - @mfitzharris
+Laura Moreno - @lauframo
