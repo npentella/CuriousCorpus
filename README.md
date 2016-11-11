@@ -50,6 +50,6 @@ $ source ~/.bashrc
 
 ##Contributors
 * Nicolas Pentella - [@npentella](https://github.com/npentella)
-Rachael Lunney - @rakaloo
-Molly Fitzharris - @mfitzharris
-Laura Moreno - @lauframo
+* Rachael Lunney - [@rakaloo](https://github.com/rakaloo)
+* Molly Fitzharris - [@mfitzharris](https://github.com/mfitzharris)
+* Laura Moreno - [@lauframo](https://github.com/lauframo)
