@@ -1,18 +1,26 @@
-from flask import Flask
-# from flask_sqlalchemy import SQLAlchemy
-import os
-
-app = Flask(__name__)
-app.config.from_object(os.environ['APP_SETTINGS'])
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-# db = SQLAlchemy(app)
-
-# from models import Text
+from flask import Flask, render_template, request, jsonify
+from helpers import predict, svm_predict_all
 
 
-@app.route('/')
+application = Flask(__name__)
+
+# svm_prediction = svm_predict_all()
+
+
+@application.route("/")
 def hello():
-    return "Hello World!"
+  return render_template("index.html")
 
-if __name__ == '__main__':
-    app.run()
+@application.route("/texts", methods=["POST"])
+def analyze():
+  _text = [request.form['inputText']]
+  predictions = predict(_text)
+  return render_template("results.html", predictions = predictions)
+
+@application.route("/texts")
+def statistics():
+  # svm_prediction = svm_predict_all()
+  return render_template("statistics.html")
+
+if __name__ == "__main__":
+  application.run()
