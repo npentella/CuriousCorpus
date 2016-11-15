@@ -6,6 +6,8 @@ from sklearn.naive_bayes import MultinomialNB
 from sklearn.externals import joblib
 from sklearn import metrics
 
+# Load pre-trained vectorizers and classifiers
+
 svm_tfidf_f = open("pickles/svm_tfidf_vect.pkl")
 svm_tfidf_vectorizer = joblib.load(svm_tfidf_f)
 svm_tfidf_f.close()
@@ -76,9 +78,3 @@ def predict(text_to_check):
 
 def predict_all():
   return {"rf": rf_predict_all(), "svm": svm_predict_all(), "nb": nb_predict_all()}
-
-# prediction =  predict("dummy")
-# print prediction['svm']
-# nb: nb_predict(text_to_check), rf: rf_predict(text_to_check)
-
-# print predict_all()
